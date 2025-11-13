@@ -1,0 +1,152 @@
+/* === GLOBAL STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #2d3436;
+}
+
+/* === MAIN CONTAINER === */
+.container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 420px;
+  padding: 35px 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+/* === HEADER === */
+h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #636e72;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* === WALLETS DISPLAY === */
+.wallets {
+  background: #f7f9fa;
+  border: 1px solid #dfe6e9;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.wallets h3 {
+  color: #0984e3;
+  margin-bottom: 10px;
+}
+
+.wallets p {
+  font-weight: 500;
+  color: #2d3436;
+  background: #ecf0f1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin: 6px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wallets p strong {
+  color: #0984e3;
+}
+
+/* === CARD SECTIONS === */
+.card {
+  background: #f0f4f8;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 15px;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  border-color: #0984e3;
+  background: #e9f3ff;
+}
+
+.card h3 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* === INPUTS & BUTTONS === */
+input {
+  width: 80%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #b2bec3;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #0984e3;
+}
+
+button {
+  background: linear-gradient(90deg, #0984e3, #74b9ff);
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #74b9ff, #0984e3);
+  transform: scale(1.05);
+}
+
+/* === FOOTER === */
+.footer {
+  margin-top: 25px;
+  font-size: 13px;
+  color: #636e72;
+  opacity: 0.8;
+  border-top: 1px solid #dfe6e9;
+  padding-top: 10px;
+}
+
+.footer p {
+  margin-top: 5px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    padding: 25px 15px;
+  }
+  input {
+    width: 100%;
+  }
+}

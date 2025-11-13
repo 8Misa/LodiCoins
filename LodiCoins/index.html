@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>₤odiCoins Wallet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>💰 ₤odiCoins Wallet</h1>
+    <p>Manage your balance, top-up, and transfer funds easily!</p>
+
+    <div id="wallets" class="wallets"></div>
+
+    <div class="card">
+      <h3>Top-Up Wallet</h3>
+      <input type="text" id="topup-name" placeholder="Name (e.g. Alice)">
+      <input type="number" id="topup-amount" placeholder="Amount">
+      <button onclick="topUp()">Top Up</button>
+    </div>
+
+    <div class="card">
+      <h3>Transfer Funds</h3>
+      <input type="text" id="from-name" placeholder="From (e.g. Alice)">
+      <input type="text" id="to-name" placeholder="To (e.g. Bob)">
+      <input type="number" id="transfer-amount" placeholder="Amount">
+      <button onclick="transfer()">Transfer</button>
+    </div>
+
+    <div class="footer">
+      <p>Created with ❤️ for LodiCoins Project</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
