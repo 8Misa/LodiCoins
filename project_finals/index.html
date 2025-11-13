@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodi Coin's E-Wallet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lodi Coin's E-Wallet</h1>
+
+        <!-- Wallet balance section -->
+        <div id="wallet-section">
+            <p>Your current balance: <span id="balance">0</span> PESO</p>
+            <button id="topUpButton">Top-Up</button>
+        </div>
+
+        <!-- Transfer section -->
+        <div id="transfer-section">
+            <input type="text" id="recipient" placeholder="Recipient Username">
+            <input type="number" id="amount" placeholder="Amount to Transfer">
+            <button id="transferButton">Transfer</button>
+        </div>
+
+        <!-- Transaction history -->
+        <div id="history-section">
+            <h3>Transaction History</h3>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
